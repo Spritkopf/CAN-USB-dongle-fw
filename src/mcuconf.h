@@ -41,16 +41,16 @@
 #define STM32_PLS                           STM32_PLS_LEV0
 #define STM32_HSI_ENABLED                   TRUE
 #define STM32_LSI_ENABLED                   TRUE
-#define STM32_HSE_ENABLED                   TRUE
+#define STM32_HSE_ENABLED                   FALSE
 #define STM32_LSE_ENABLED                   FALSE
 #define STM32_SW                            STM32_SW_PLL
-#define STM32_PLLSRC                        STM32_PLLSRC_HSE
+#define STM32_PLLSRC                        STM32_PLLSRC_HSI
 #if (STM32_HSECLK == 16000000U)
 #define STM32_PREDIV_VALUE                  2
 #elif (STM32_HSECLK == 8000000U)
 #define STM32_PREDIV_VALUE                  1
 #endif
-#define STM32_PLLMUL_VALUE                  9
+#define STM32_PLLMUL_VALUE                  12
 #define STM32_HPRE                          STM32_HPRE_DIV1
 #define STM32_PPRE1                         STM32_PPRE1_DIV2
 #define STM32_PPRE2                         STM32_PPRE2_DIV1
@@ -62,7 +62,7 @@
 #define STM32_I2C1SW                        STM32_I2C1SW_SYSCLK
 #define STM32_TIM1SW                        STM32_TIM1SW_PCLK2
 #define STM32_RTCSEL                        STM32_RTCSEL_LSI
-#define STM32_USBPRE                        STM32_USBPRE_DIV1P5
+#define STM32_USBPRE                        STM32_USBPRE_DIV1
 
 /*
  * ADC driver system settings.

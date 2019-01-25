@@ -58,7 +58,7 @@ USE_FPU = no
 #
 
 # set to one of the target boards below
-TARGET = CAN-USB-dongle-RevA
+TARGET = nucleo
 
 # target boards
 ifeq ($(TARGET), nucleo)

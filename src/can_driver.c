@@ -19,11 +19,11 @@
 #endif
 
 #define CAN_BASE_CLOCK STM32_PCLK1 // APB1 clock = 36MHz
-#if CAN_BASE_CLOCK != 36000000
+#if CAN_BASE_CLOCK != 24000000
 #error "CAN peripheral clock"
 #endif
-#define BTR_TS1 6
-#define BTR_TS2 5
+#define BTR_TS1 4
+#define BTR_TS2 3
 #define CAN_BASE_BIT_RATE CAN_BASE_CLOCK / (1 + BTR_TS1 + BTR_TS2)
 
 static bool can_btr_from_bitrate(uint32_t bitrate, uint32_t *btr_value);
